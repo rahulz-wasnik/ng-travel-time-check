@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <table class="table table-hover table-sm">
+        <thead>
+          <tr>
+            <th scope="col">Bus ID</th>
+            <th scope="col">Route Variant</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let bus of buses">
+            <td>{{bus.busId}}</td>
+            <td [innerHTML]="bus.routeVariant | routeVariant"></td>
+            <td [innerHTML]="bus.deviationFromTimetable | runningStatus"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
