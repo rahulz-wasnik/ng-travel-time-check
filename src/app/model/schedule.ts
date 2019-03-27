@@ -1,8 +1,7 @@
 
-import { Bus } from './bus';
+import { Organisation } from './organisation';
 
 export interface Schedule {
-    organisation: string;
     date: string;
-    buses: Bus[];
+    organisations: Organisation[];
 }

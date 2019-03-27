@@ -15,7 +15,7 @@ a {
     font-weight: 300;
 }
 
-a:hover {
+.active, a:hover {
     color: white;
     font-weight: bold;
 }

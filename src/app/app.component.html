@@ -1,10 +1,14 @@
 <div class="wrapper">
-    <div><app-header></app-header></div>
-    <div><app-toolbar></app-toolbar></div>
-    <!-- <div *ngIf="navigationInProgress" class="content">
+    <div>
+        <app-header></app-header>
+    </div>
+    <div>
+        <app-toolbar></app-toolbar>
+    </div>
+    <div *ngIf="navigationInProgress">
         <app-progress-spinner></app-progress-spinner>
-    </div> -->
-    <div class="content">
+    </div>
+    <div *ngIf="!navigationInProgress" class="content">
         <router-outlet></router-outlet>
     </div>
 </div>

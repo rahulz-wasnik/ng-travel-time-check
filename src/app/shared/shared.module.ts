@@ -4,7 +4,9 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { NgbTypeaheadModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatButtonModule } from '@angular/material/button';
 
-import { ComponentComponent } from './component/component.component';
+import { RouteVariantPipe } from './pipe/route-variant.pipe';
+import { RunningStatusPipe } from './pipe/running-status.pipe';
+import { ProgressSpinnerComponent } from './component/progress-spinner/progress-spinner.component';
 
 @NgModule({
   imports: [
@@ -13,11 +15,18 @@ import { ComponentComponent } from './component/component.component';
     MatButtonModule,
     NgbTypeaheadModule
   ],
-  declarations: [ComponentComponent],
+  declarations: [
+    RouteVariantPipe,
+    RunningStatusPipe,
+    ProgressSpinnerComponent
+  ],
   exports: [
     MatTabsModule,
     NgbTypeaheadModule,
-    MatButtonModule
+    MatButtonModule,
+    RouteVariantPipe,
+    RunningStatusPipe,
+    ProgressSpinnerComponent
   ]
 })
 export class SharedModule { }
