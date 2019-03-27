@@ -1,0 +1,21 @@
+@import 'main';
+
+.d-flex, .nav {
+    background: $primary;
+    color: $white;
+    font-weight: bold;
+}
+
+.app-ml-5p {
+    margin-left: 5px;
+}
+
+a {
+    color: white;
+    font-weight: 300;
+}
+
+.active, a:hover {
+    color: white;
+    font-weight: bold;
+}
