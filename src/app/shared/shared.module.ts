@@ -7,13 +7,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { RouteVariantPipe } from './pipe/route-variant.pipe';
 import { RunningStatusPipe } from './pipe/running-status.pipe';
 import { ProgressSpinnerComponent } from './component/progress-spinner/progress-spinner.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   imports: [
     CommonModule,
     MatTabsModule,
     MatButtonModule,
-    NgbTypeaheadModule
+    NgbTypeaheadModule,
+    MatProgressSpinnerModule
   ],
   declarations: [
     RouteVariantPipe,
@@ -26,7 +28,8 @@ import { ProgressSpinnerComponent } from './component/progress-spinner/progress-
     MatButtonModule,
     RouteVariantPipe,
     RunningStatusPipe,
-    ProgressSpinnerComponent
+    ProgressSpinnerComponent,
+    MatProgressSpinnerModule
   ]
 })
 export class SharedModule { }

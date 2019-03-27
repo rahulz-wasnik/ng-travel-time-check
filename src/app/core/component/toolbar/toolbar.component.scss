@@ -1,7 +1,7 @@
 @import 'main';
 
 .d-flex, .nav {
-    background: $primary;
+    background-image: linear-gradient(to right, $app-primary , $indigo);
     color: $white;
     font-weight: bold;
 }
