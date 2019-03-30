@@ -15,7 +15,7 @@ export class GetSchedule implements Action {
 
 export class GetScheduleSuccess implements Action {
     readonly type = ScheduleActionTypes.GetScheduleSuccess;
-    constructor(public payload: Schedule[]) { }
+    constructor(public payload: Schedule) { }
 }
 
 export class GetScheduleFail implements Action {
