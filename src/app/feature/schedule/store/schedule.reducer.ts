@@ -26,7 +26,7 @@ export function reducer(state = fromScheduleStore.initialState,
 
             return {
                 ...state,
-                schedule: [],
+                schedule: null,
                 error: action.payload,
                 operationInProgress: false
             };

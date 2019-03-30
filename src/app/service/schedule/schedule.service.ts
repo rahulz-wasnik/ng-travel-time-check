@@ -12,7 +12,7 @@ export class ScheduleService {
 
   constructor(private http: HttpClient) { }
 
-  get(): Observable<Schedule[]> {
-    return this.http.get<Schedule[]>(environment.api);
+  get(): Observable<Schedule> {
+    return this.http.get<Schedule>(environment.api);
   }
 }
