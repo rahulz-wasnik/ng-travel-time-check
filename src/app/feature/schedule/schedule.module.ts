@@ -9,7 +9,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { FilterResultComponent } from './filter-result/filter-result.component';
 import { reducer } from './store/schedule.reducer';
 import { ScheduleEffect } from './store/schedule.effect';
-import { BusesComponent } from './buses/buses.component';
+import { BusDetailsShellComponent } from './buses/bus-details-shell/bus-details-shell.component';
+import { BusScheduleComponent } from './buses/bus-schedule/bus-schedule.component';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { BusesComponent } from './buses/buses.component';
   declarations: [
     MassTransitTypesComponent,
     FilterResultComponent,
-    BusesComponent
+    BusDetailsShellComponent,
+    BusScheduleComponent
   ]
 })
 export class ScheduleModule { }

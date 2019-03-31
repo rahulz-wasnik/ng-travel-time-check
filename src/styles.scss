@@ -2,12 +2,6 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import 'main';
 
-@include google-fonts($theme-font);
-
-.app-background {
-    font-family: $theme-font;
-}
-
 a {
     cursor: pointer;
 }

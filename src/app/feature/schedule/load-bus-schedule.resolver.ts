@@ -9,7 +9,7 @@ import * as fromStore from './store';
 @Injectable({
     providedIn: 'root'
 })
-export class LoadScheduleResolver implements Resolve<any> {
+export class LoadBusScheduleResolver implements Resolve<any> {
 
     constructor(private store: Store<fromStore.State>) { }
 

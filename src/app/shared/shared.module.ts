@@ -8,6 +8,7 @@ import { RouteVariantPipe } from './pipe/route-variant.pipe';
 import { RunningStatusPipe } from './pipe/running-status.pipe';
 import { ProgressSpinnerComponent } from './component/progress-spinner/progress-spinner.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { SearchComponent } from './component/search/search.component';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
   declarations: [
     RouteVariantPipe,
     RunningStatusPipe,
-    ProgressSpinnerComponent
+    ProgressSpinnerComponent,
+    SearchComponent
   ],
   exports: [
     MatTabsModule,
@@ -29,7 +31,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     RouteVariantPipe,
     RunningStatusPipe,
     ProgressSpinnerComponent,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    SearchComponent
   ]
 })
 export class SharedModule { }

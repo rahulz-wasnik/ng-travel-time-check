@@ -3,9 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { RouteConstant } from './shared/constant/route.constant';
 
 const routes: Routes = [
-    {path: RouteConstant.schedule, loadChildren: './feature/schedule/schedule.module#ScheduleModule'},
-    {path: '', redirectTo: RouteConstant.schedule, pathMatch: 'full'},
-    {path: '**', redirectTo: RouteConstant.schedule, pathMatch: 'full'}
+  { path: RouteConstant.schedule, loadChildren: './feature/schedule/schedule.module#ScheduleModule' },
+  { path: '', redirectTo: RouteConstant.schedule, pathMatch: 'full' },
+  { path: '**', redirectTo: RouteConstant.schedule, pathMatch: 'full' }
 ];
 
 @NgModule({
