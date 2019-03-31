@@ -1,4 +1,5 @@
 
 export const RouteConstant = {
-    schedule: 'schedule'
+    schedule: 'schedule',
+    buses: 'buses'
 }
